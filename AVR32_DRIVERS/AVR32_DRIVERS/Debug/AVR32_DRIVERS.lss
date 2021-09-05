@@ -1,0 +1,611 @@
+
+AVR32_DRIVERS.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000003d4  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  00000428  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .comment      00000030  00000000  00000000  00000428  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000458  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 000000e8  00000000  00000000  00000494  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000c55  00000000  00000000  0000057c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000007ac  00000000  00000000  000011d1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000005cc  00000000  00000000  0000197d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  0000018c  00000000  00000000  00001f4c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000048d  00000000  00000000  000020d8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000006d4  00000000  00000000  00002565  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 000000a8  00000000  00000000  00002c39  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 96 00 	jmp	0x12c	; 0x12c <__ctors_end>
+   4:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+   8:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+   c:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  10:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  14:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  18:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  1c:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  20:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  24:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  28:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  2c:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  30:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  34:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  38:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  3c:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  40:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  44:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  48:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  4c:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  50:	0c 94 a0 00 	jmp	0x140	; 0x140 <__bad_interrupt>
+  54:	f1 00       	.word	0x00f1	; ????
+  56:	0a 01       	movw	r0, r20
+  58:	23 01       	movw	r4, r6
+  5a:	3c 01       	movw	r6, r24
+  5c:	54 01       	movw	r10, r8
+  5e:	54 01       	movw	r10, r8
+  60:	54 01       	movw	r10, r8
+  62:	54 01       	movw	r10, r8
+  64:	54 01       	movw	r10, r8
+  66:	54 01       	movw	r10, r8
+  68:	54 01       	movw	r10, r8
+  6a:	54 01       	movw	r10, r8
+  6c:	54 01       	movw	r10, r8
+  6e:	54 01       	movw	r10, r8
+  70:	54 01       	movw	r10, r8
+  72:	54 01       	movw	r10, r8
+  74:	54 01       	movw	r10, r8
+  76:	54 01       	movw	r10, r8
+  78:	54 01       	movw	r10, r8
+  7a:	54 01       	movw	r10, r8
+  7c:	54 01       	movw	r10, r8
+  7e:	54 01       	movw	r10, r8
+  80:	54 01       	movw	r10, r8
+  82:	54 01       	movw	r10, r8
+  84:	54 01       	movw	r10, r8
+  86:	54 01       	movw	r10, r8
+  88:	54 01       	movw	r10, r8
+  8a:	54 01       	movw	r10, r8
+  8c:	54 01       	movw	r10, r8
+  8e:	54 01       	movw	r10, r8
+  90:	54 01       	movw	r10, r8
+  92:	54 01       	movw	r10, r8
+  94:	f1 00       	.word	0x00f1	; ????
+  96:	0a 01       	movw	r0, r20
+  98:	23 01       	movw	r4, r6
+  9a:	3c 01       	movw	r6, r24
+  9c:	61 01       	movw	r12, r2
+  9e:	73 01       	movw	r14, r6
+  a0:	85 01       	movw	r16, r10
+  a2:	97 01       	movw	r18, r14
+  a4:	a9 01       	movw	r20, r18
+  a6:	a9 01       	movw	r20, r18
+  a8:	a9 01       	movw	r20, r18
+  aa:	a9 01       	movw	r20, r18
+  ac:	a9 01       	movw	r20, r18
+  ae:	a9 01       	movw	r20, r18
+  b0:	a9 01       	movw	r20, r18
+  b2:	a9 01       	movw	r20, r18
+  b4:	a9 01       	movw	r20, r18
+  b6:	a9 01       	movw	r20, r18
+  b8:	a9 01       	movw	r20, r18
+  ba:	a9 01       	movw	r20, r18
+  bc:	a9 01       	movw	r20, r18
+  be:	a9 01       	movw	r20, r18
+  c0:	a9 01       	movw	r20, r18
+  c2:	a9 01       	movw	r20, r18
+  c4:	a9 01       	movw	r20, r18
+  c6:	a9 01       	movw	r20, r18
+  c8:	a9 01       	movw	r20, r18
+  ca:	a9 01       	movw	r20, r18
+  cc:	a9 01       	movw	r20, r18
+  ce:	a9 01       	movw	r20, r18
+  d0:	a9 01       	movw	r20, r18
+  d2:	a9 01       	movw	r20, r18
+  d4:	a9 01       	movw	r20, r18
+  d6:	a9 01       	movw	r20, r18
+  d8:	a9 01       	movw	r20, r18
+  da:	a9 01       	movw	r20, r18
+  dc:	61 01       	movw	r12, r2
+  de:	73 01       	movw	r14, r6
+  e0:	85 01       	movw	r16, r10
+  e2:	97 01       	movw	r18, r14
+  e4:	b6 01       	movw	r22, r12
+  e6:	c1 01       	movw	r24, r2
+  e8:	cc 01       	movw	r24, r24
+  ea:	d7 01       	movw	r26, r14
+  ec:	e1 01       	movw	r28, r2
+  ee:	e1 01       	movw	r28, r2
+  f0:	e1 01       	movw	r28, r2
+  f2:	e1 01       	movw	r28, r2
+  f4:	e1 01       	movw	r28, r2
+  f6:	e1 01       	movw	r28, r2
+  f8:	e1 01       	movw	r28, r2
+  fa:	e1 01       	movw	r28, r2
+  fc:	e1 01       	movw	r28, r2
+  fe:	e1 01       	movw	r28, r2
+ 100:	e1 01       	movw	r28, r2
+ 102:	e1 01       	movw	r28, r2
+ 104:	e1 01       	movw	r28, r2
+ 106:	e1 01       	movw	r28, r2
+ 108:	e1 01       	movw	r28, r2
+ 10a:	e1 01       	movw	r28, r2
+ 10c:	e1 01       	movw	r28, r2
+ 10e:	e1 01       	movw	r28, r2
+ 110:	e1 01       	movw	r28, r2
+ 112:	e1 01       	movw	r28, r2
+ 114:	e1 01       	movw	r28, r2
+ 116:	e1 01       	movw	r28, r2
+ 118:	e1 01       	movw	r28, r2
+ 11a:	e1 01       	movw	r28, r2
+ 11c:	e1 01       	movw	r28, r2
+ 11e:	e1 01       	movw	r28, r2
+ 120:	e1 01       	movw	r28, r2
+ 122:	e1 01       	movw	r28, r2
+ 124:	b6 01       	movw	r22, r12
+ 126:	c1 01       	movw	r24, r2
+ 128:	cc 01       	movw	r24, r24
+ 12a:	d7 01       	movw	r26, r14
+
+0000012c <__ctors_end>:
+ 12c:	11 24       	eor	r1, r1
+ 12e:	1f be       	out	0x3f, r1	; 63
+ 130:	cf e5       	ldi	r28, 0x5F	; 95
+ 132:	d8 e0       	ldi	r29, 0x08	; 8
+ 134:	de bf       	out	0x3e, r29	; 62
+ 136:	cd bf       	out	0x3d, r28	; 61
+ 138:	0e 94 a2 00 	call	0x144	; 0x144 <main>
+ 13c:	0c 94 e8 01 	jmp	0x3d0	; 0x3d0 <_exit>
+
+00000140 <__bad_interrupt>:
+ 140:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000144 <main>:
+#include "../HAL/Header/Button_driver_ECU.h"
+
+
+int main(void)
+{
+	LED_vinitialize('A',0);
+ 144:	60 e0       	ldi	r22, 0x00	; 0
+ 146:	81 e4       	ldi	r24, 0x41	; 65
+ 148:	0e 94 de 00 	call	0x1bc	; 0x1bc <LED_vinitialize>
+	BUTTON_vInit('D',3);
+ 14c:	63 e0       	ldi	r22, 0x03	; 3
+ 14e:	84 e4       	ldi	r24, 0x44	; 68
+ 150:	0e 94 bb 00 	call	0x176	; 0x176 <BUTTON_vInit>
+	while(1)
+    {
+		if (BUTTON_u8read('D',3) == HIGH)
+ 154:	63 e0       	ldi	r22, 0x03	; 3
+ 156:	84 e4       	ldi	r24, 0x44	; 68
+ 158:	0e 94 bf 00 	call	0x17e	; 0x17e <BUTTON_u8read>
+ 15c:	81 30       	cpi	r24, 0x01	; 1
+ 15e:	d1 f7       	brne	.-12     	; 0x154 <main+0x10>
+		{
+			while (BUTTON_u8read('D',3) == HIGH);
+ 160:	63 e0       	ldi	r22, 0x03	; 3
+ 162:	84 e4       	ldi	r24, 0x44	; 68
+ 164:	0e 94 bf 00 	call	0x17e	; 0x17e <BUTTON_u8read>
+ 168:	81 30       	cpi	r24, 0x01	; 1
+ 16a:	d1 f3       	breq	.-12     	; 0x160 <main+0x1c>
+			LED_vToggle('A',0);
+ 16c:	60 e0       	ldi	r22, 0x00	; 0
+ 16e:	81 e4       	ldi	r24, 0x41	; 65
+ 170:	0e 94 e2 00 	call	0x1c4	; 0x1c4 <LED_vToggle>
+ 174:	ef cf       	rjmp	.-34     	; 0x154 <main+0x10>
+
+00000176 <BUTTON_vInit>:
+ *  Author: Ahmed SemSem
+ */ 
+#include "../Header/Button_driver_ECU.h"
+
+void BUTTON_vInit(u8 port, u8 pin){
+	GPIO_vsetPIN_DIR(port, pin, INPUT);
+ 176:	40 e0       	ldi	r20, 0x00	; 0
+ 178:	0e 94 e5 00 	call	0x1ca	; 0x1ca <GPIO_vsetPIN_DIR>
+ 17c:	08 95       	ret
+
+0000017e <BUTTON_u8read>:
+}
+
+u8 BUTTON_u8read(u8 port, u8 pin){
+ 17e:	0f 93       	push	r16
+ 180:	1f 93       	push	r17
+ 182:	cf 93       	push	r28
+ 184:	df 93       	push	r29
+ 186:	1f 92       	push	r1
+ 188:	cd b7       	in	r28, 0x3d	; 61
+ 18a:	de b7       	in	r29, 0x3e	; 62
+ 18c:	18 2f       	mov	r17, r24
+ 18e:	06 2f       	mov	r16, r22
+	u8 Value;
+	Value = GPIO_u8read_PIN(port, pin);
+ 190:	0e 94 55 01 	call	0x2aa	; 0x2aa <GPIO_u8read_PIN>
+	for(volatile u8 mSec=0; mSec<5; mSec++);// delay 5ms for debouncing
+ 194:	19 82       	std	Y+1, r1	; 0x01
+ 196:	89 81       	ldd	r24, Y+1	; 0x01
+ 198:	85 30       	cpi	r24, 0x05	; 5
+ 19a:	30 f4       	brcc	.+12     	; 0x1a8 <BUTTON_u8read+0x2a>
+ 19c:	89 81       	ldd	r24, Y+1	; 0x01
+ 19e:	8f 5f       	subi	r24, 0xFF	; 255
+ 1a0:	89 83       	std	Y+1, r24	; 0x01
+ 1a2:	89 81       	ldd	r24, Y+1	; 0x01
+ 1a4:	85 30       	cpi	r24, 0x05	; 5
+ 1a6:	d0 f3       	brcs	.-12     	; 0x19c <BUTTON_u8read+0x1e>
+	Value = GPIO_u8read_PIN(port, pin);
+ 1a8:	60 2f       	mov	r22, r16
+ 1aa:	81 2f       	mov	r24, r17
+ 1ac:	0e 94 55 01 	call	0x2aa	; 0x2aa <GPIO_u8read_PIN>
+	return Value;
+ 1b0:	0f 90       	pop	r0
+ 1b2:	df 91       	pop	r29
+ 1b4:	cf 91       	pop	r28
+ 1b6:	1f 91       	pop	r17
+ 1b8:	0f 91       	pop	r16
+ 1ba:	08 95       	ret
+
+000001bc <LED_vinitialize>:
+}
+
+//=====================================================================
+
+void LED_vTurnoff(u8 port, u8 pin){
+	GPIO_vwrite_PIN(port, pin, LOW);
+ 1bc:	41 e0       	ldi	r20, 0x01	; 1
+ 1be:	0e 94 e5 00 	call	0x1ca	; 0x1ca <GPIO_vsetPIN_DIR>
+ 1c2:	08 95       	ret
+
+000001c4 <LED_vToggle>:
+}
+
+//=====================================================================
+
+void LED_vToggle(u8 port, u8 pin){
+	GPIO_vtoggle_PIN(port, pin);
+ 1c4:	0e 94 ab 01 	call	0x356	; 0x356 <GPIO_vtoggle_PIN>
+ 1c8:	08 95       	ret
+
+000001ca <GPIO_vsetPIN_DIR>:
+		case 'D' :
+		case 'd' :
+		if(value == 1){
+			SET_BIT(myPORTD,pinnum);
+			}else{
+			CLR_BIT(myPORTD,pinnum);
+ 1ca:	90 e0       	ldi	r25, 0x00	; 0
+ 1cc:	fc 01       	movw	r30, r24
+ 1ce:	e1 54       	subi	r30, 0x41	; 65
+ 1d0:	f1 09       	sbc	r31, r1
+ 1d2:	e4 32       	cpi	r30, 0x24	; 36
+ 1d4:	f1 05       	cpc	r31, r1
+ 1d6:	08 f0       	brcs	.+2      	; 0x1da <GPIO_vsetPIN_DIR+0x10>
+ 1d8:	67 c0       	rjmp	.+206    	; 0x2a8 <GPIO_vsetPIN_DIR+0xde>
+ 1da:	e6 5d       	subi	r30, 0xD6	; 214
+ 1dc:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1de:	0c 94 e2 01 	jmp	0x3c4	; 0x3c4 <__tablejump2__>
+ 1e2:	41 30       	cpi	r20, 0x01	; 1
+ 1e4:	59 f4       	brne	.+22     	; 0x1fc <GPIO_vsetPIN_DIR+0x32>
+ 1e6:	2a b3       	in	r18, 0x1a	; 26
+ 1e8:	81 e0       	ldi	r24, 0x01	; 1
+ 1ea:	90 e0       	ldi	r25, 0x00	; 0
+ 1ec:	02 c0       	rjmp	.+4      	; 0x1f2 <GPIO_vsetPIN_DIR+0x28>
+ 1ee:	88 0f       	add	r24, r24
+ 1f0:	99 1f       	adc	r25, r25
+ 1f2:	6a 95       	dec	r22
+ 1f4:	e2 f7       	brpl	.-8      	; 0x1ee <GPIO_vsetPIN_DIR+0x24>
+ 1f6:	82 2b       	or	r24, r18
+ 1f8:	8a bb       	out	0x1a, r24	; 26
+ 1fa:	08 95       	ret
+ 1fc:	2a b3       	in	r18, 0x1a	; 26
+ 1fe:	81 e0       	ldi	r24, 0x01	; 1
+ 200:	90 e0       	ldi	r25, 0x00	; 0
+ 202:	02 c0       	rjmp	.+4      	; 0x208 <GPIO_vsetPIN_DIR+0x3e>
+ 204:	88 0f       	add	r24, r24
+ 206:	99 1f       	adc	r25, r25
+ 208:	6a 95       	dec	r22
+ 20a:	e2 f7       	brpl	.-8      	; 0x204 <GPIO_vsetPIN_DIR+0x3a>
+ 20c:	80 95       	com	r24
+ 20e:	82 23       	and	r24, r18
+ 210:	8a bb       	out	0x1a, r24	; 26
+ 212:	08 95       	ret
+ 214:	41 30       	cpi	r20, 0x01	; 1
+ 216:	59 f4       	brne	.+22     	; 0x22e <GPIO_vsetPIN_DIR+0x64>
+ 218:	27 b3       	in	r18, 0x17	; 23
+ 21a:	81 e0       	ldi	r24, 0x01	; 1
+ 21c:	90 e0       	ldi	r25, 0x00	; 0
+ 21e:	02 c0       	rjmp	.+4      	; 0x224 <GPIO_vsetPIN_DIR+0x5a>
+ 220:	88 0f       	add	r24, r24
+ 222:	99 1f       	adc	r25, r25
+ 224:	6a 95       	dec	r22
+ 226:	e2 f7       	brpl	.-8      	; 0x220 <GPIO_vsetPIN_DIR+0x56>
+ 228:	82 2b       	or	r24, r18
+ 22a:	87 bb       	out	0x17, r24	; 23
+ 22c:	08 95       	ret
+ 22e:	27 b3       	in	r18, 0x17	; 23
+ 230:	81 e0       	ldi	r24, 0x01	; 1
+ 232:	90 e0       	ldi	r25, 0x00	; 0
+ 234:	02 c0       	rjmp	.+4      	; 0x23a <GPIO_vsetPIN_DIR+0x70>
+ 236:	88 0f       	add	r24, r24
+ 238:	99 1f       	adc	r25, r25
+ 23a:	6a 95       	dec	r22
+ 23c:	e2 f7       	brpl	.-8      	; 0x236 <GPIO_vsetPIN_DIR+0x6c>
+ 23e:	80 95       	com	r24
+ 240:	82 23       	and	r24, r18
+ 242:	87 bb       	out	0x17, r24	; 23
+ 244:	08 95       	ret
+ 246:	41 30       	cpi	r20, 0x01	; 1
+ 248:	59 f4       	brne	.+22     	; 0x260 <GPIO_vsetPIN_DIR+0x96>
+ 24a:	24 b3       	in	r18, 0x14	; 20
+ 24c:	81 e0       	ldi	r24, 0x01	; 1
+ 24e:	90 e0       	ldi	r25, 0x00	; 0
+ 250:	02 c0       	rjmp	.+4      	; 0x256 <GPIO_vsetPIN_DIR+0x8c>
+ 252:	88 0f       	add	r24, r24
+ 254:	99 1f       	adc	r25, r25
+ 256:	6a 95       	dec	r22
+ 258:	e2 f7       	brpl	.-8      	; 0x252 <GPIO_vsetPIN_DIR+0x88>
+ 25a:	82 2b       	or	r24, r18
+ 25c:	84 bb       	out	0x14, r24	; 20
+ 25e:	08 95       	ret
+ 260:	24 b3       	in	r18, 0x14	; 20
+ 262:	81 e0       	ldi	r24, 0x01	; 1
+ 264:	90 e0       	ldi	r25, 0x00	; 0
+ 266:	02 c0       	rjmp	.+4      	; 0x26c <GPIO_vsetPIN_DIR+0xa2>
+ 268:	88 0f       	add	r24, r24
+ 26a:	99 1f       	adc	r25, r25
+ 26c:	6a 95       	dec	r22
+ 26e:	e2 f7       	brpl	.-8      	; 0x268 <GPIO_vsetPIN_DIR+0x9e>
+ 270:	80 95       	com	r24
+ 272:	82 23       	and	r24, r18
+ 274:	84 bb       	out	0x14, r24	; 20
+ 276:	08 95       	ret
+ 278:	41 30       	cpi	r20, 0x01	; 1
+ 27a:	59 f4       	brne	.+22     	; 0x292 <GPIO_vsetPIN_DIR+0xc8>
+ 27c:	21 b3       	in	r18, 0x11	; 17
+ 27e:	81 e0       	ldi	r24, 0x01	; 1
+ 280:	90 e0       	ldi	r25, 0x00	; 0
+ 282:	02 c0       	rjmp	.+4      	; 0x288 <GPIO_vsetPIN_DIR+0xbe>
+ 284:	88 0f       	add	r24, r24
+ 286:	99 1f       	adc	r25, r25
+ 288:	6a 95       	dec	r22
+ 28a:	e2 f7       	brpl	.-8      	; 0x284 <GPIO_vsetPIN_DIR+0xba>
+ 28c:	82 2b       	or	r24, r18
+ 28e:	81 bb       	out	0x11, r24	; 17
+ 290:	08 95       	ret
+ 292:	21 b3       	in	r18, 0x11	; 17
+ 294:	81 e0       	ldi	r24, 0x01	; 1
+ 296:	90 e0       	ldi	r25, 0x00	; 0
+ 298:	02 c0       	rjmp	.+4      	; 0x29e <GPIO_vsetPIN_DIR+0xd4>
+ 29a:	88 0f       	add	r24, r24
+ 29c:	99 1f       	adc	r25, r25
+ 29e:	6a 95       	dec	r22
+ 2a0:	e2 f7       	brpl	.-8      	; 0x29a <GPIO_vsetPIN_DIR+0xd0>
+ 2a2:	80 95       	com	r24
+ 2a4:	82 23       	and	r24, r18
+ 2a6:	81 bb       	out	0x11, r24	; 17
+ 2a8:	08 95       	ret
+
+000002aa <GPIO_u8read_PIN>:
+
+//======================================================================================================
+
+u8 GPIO_u8read_PIN(u8 portnum, u8 pinnum){
+	u8 Value=0;
+	switch (portnum){
+ 2aa:	90 e0       	ldi	r25, 0x00	; 0
+ 2ac:	fc 01       	movw	r30, r24
+ 2ae:	e1 54       	subi	r30, 0x41	; 65
+ 2b0:	f1 09       	sbc	r31, r1
+ 2b2:	e4 32       	cpi	r30, 0x24	; 36
+ 2b4:	f1 05       	cpc	r31, r1
+ 2b6:	08 f0       	brcs	.+2      	; 0x2ba <GPIO_u8read_PIN+0x10>
+ 2b8:	4c c0       	rjmp	.+152    	; 0x352 <GPIO_u8read_PIN+0xa8>
+ 2ba:	e2 5b       	subi	r30, 0xB2	; 178
+ 2bc:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2be:	0c 94 e2 01 	jmp	0x3c4	; 0x3c4 <__tablejump2__>
+		case 'A' :
+		case 'a' :
+			Value = READ_BIT(myPINA,pinnum);
+ 2c2:	29 b3       	in	r18, 0x19	; 25
+ 2c4:	81 e0       	ldi	r24, 0x01	; 1
+ 2c6:	90 e0       	ldi	r25, 0x00	; 0
+ 2c8:	06 2e       	mov	r0, r22
+ 2ca:	02 c0       	rjmp	.+4      	; 0x2d0 <GPIO_u8read_PIN+0x26>
+ 2cc:	88 0f       	add	r24, r24
+ 2ce:	99 1f       	adc	r25, r25
+ 2d0:	0a 94       	dec	r0
+ 2d2:	e2 f7       	brpl	.-8      	; 0x2cc <GPIO_u8read_PIN+0x22>
+ 2d4:	30 e0       	ldi	r19, 0x00	; 0
+ 2d6:	82 23       	and	r24, r18
+ 2d8:	93 23       	and	r25, r19
+ 2da:	02 c0       	rjmp	.+4      	; 0x2e0 <GPIO_u8read_PIN+0x36>
+ 2dc:	95 95       	asr	r25
+ 2de:	87 95       	ror	r24
+ 2e0:	6a 95       	dec	r22
+ 2e2:	e2 f7       	brpl	.-8      	; 0x2dc <GPIO_u8read_PIN+0x32>
+			break;
+ 2e4:	08 95       	ret
+		case 'B' :
+		case 'b' :
+			Value = READ_BIT(myPINB,pinnum);
+ 2e6:	26 b3       	in	r18, 0x16	; 22
+ 2e8:	81 e0       	ldi	r24, 0x01	; 1
+ 2ea:	90 e0       	ldi	r25, 0x00	; 0
+ 2ec:	06 2e       	mov	r0, r22
+ 2ee:	02 c0       	rjmp	.+4      	; 0x2f4 <GPIO_u8read_PIN+0x4a>
+ 2f0:	88 0f       	add	r24, r24
+ 2f2:	99 1f       	adc	r25, r25
+ 2f4:	0a 94       	dec	r0
+ 2f6:	e2 f7       	brpl	.-8      	; 0x2f0 <GPIO_u8read_PIN+0x46>
+ 2f8:	30 e0       	ldi	r19, 0x00	; 0
+ 2fa:	82 23       	and	r24, r18
+ 2fc:	93 23       	and	r25, r19
+ 2fe:	02 c0       	rjmp	.+4      	; 0x304 <GPIO_u8read_PIN+0x5a>
+ 300:	95 95       	asr	r25
+ 302:	87 95       	ror	r24
+ 304:	6a 95       	dec	r22
+ 306:	e2 f7       	brpl	.-8      	; 0x300 <GPIO_u8read_PIN+0x56>
+			break;
+ 308:	08 95       	ret
+		case 'C' :
+		case 'c' :
+			Value = READ_BIT(myPINC,pinnum);
+ 30a:	23 b3       	in	r18, 0x13	; 19
+ 30c:	81 e0       	ldi	r24, 0x01	; 1
+ 30e:	90 e0       	ldi	r25, 0x00	; 0
+ 310:	06 2e       	mov	r0, r22
+ 312:	02 c0       	rjmp	.+4      	; 0x318 <GPIO_u8read_PIN+0x6e>
+ 314:	88 0f       	add	r24, r24
+ 316:	99 1f       	adc	r25, r25
+ 318:	0a 94       	dec	r0
+ 31a:	e2 f7       	brpl	.-8      	; 0x314 <GPIO_u8read_PIN+0x6a>
+ 31c:	30 e0       	ldi	r19, 0x00	; 0
+ 31e:	82 23       	and	r24, r18
+ 320:	93 23       	and	r25, r19
+ 322:	02 c0       	rjmp	.+4      	; 0x328 <GPIO_u8read_PIN+0x7e>
+ 324:	95 95       	asr	r25
+ 326:	87 95       	ror	r24
+ 328:	6a 95       	dec	r22
+ 32a:	e2 f7       	brpl	.-8      	; 0x324 <GPIO_u8read_PIN+0x7a>
+			break;
+ 32c:	08 95       	ret
+		case 'D' :
+		case 'd' :
+			Value = READ_BIT(myPIND,pinnum);
+ 32e:	20 b3       	in	r18, 0x10	; 16
+ 330:	81 e0       	ldi	r24, 0x01	; 1
+ 332:	90 e0       	ldi	r25, 0x00	; 0
+ 334:	06 2e       	mov	r0, r22
+ 336:	02 c0       	rjmp	.+4      	; 0x33c <GPIO_u8read_PIN+0x92>
+ 338:	88 0f       	add	r24, r24
+ 33a:	99 1f       	adc	r25, r25
+ 33c:	0a 94       	dec	r0
+ 33e:	e2 f7       	brpl	.-8      	; 0x338 <GPIO_u8read_PIN+0x8e>
+ 340:	30 e0       	ldi	r19, 0x00	; 0
+ 342:	82 23       	and	r24, r18
+ 344:	93 23       	and	r25, r19
+ 346:	02 c0       	rjmp	.+4      	; 0x34c <GPIO_u8read_PIN+0xa2>
+ 348:	95 95       	asr	r25
+ 34a:	87 95       	ror	r24
+ 34c:	6a 95       	dec	r22
+ 34e:	e2 f7       	brpl	.-8      	; 0x348 <GPIO_u8read_PIN+0x9e>
+			break;
+ 350:	08 95       	ret
+}
+
+//======================================================================================================
+
+u8 GPIO_u8read_PIN(u8 portnum, u8 pinnum){
+	u8 Value=0;
+ 352:	80 e0       	ldi	r24, 0x00	; 0
+			Value = READ_BIT(myPIND,pinnum);
+			break;
+		default: break;
+	}
+	return Value;
+}
+ 354:	08 95       	ret
+
+00000356 <GPIO_vtoggle_PIN>:
+
+//===================================================================================================
+
+void GPIO_vtoggle_PIN(u8 portnum, u8 pinnum){
+	switch (portnum){
+ 356:	90 e0       	ldi	r25, 0x00	; 0
+ 358:	fc 01       	movw	r30, r24
+ 35a:	e1 54       	subi	r30, 0x41	; 65
+ 35c:	f1 09       	sbc	r31, r1
+ 35e:	e4 32       	cpi	r30, 0x24	; 36
+ 360:	f1 05       	cpc	r31, r1
+ 362:	78 f5       	brcc	.+94     	; 0x3c2 <GPIO_vtoggle_PIN+0x6c>
+ 364:	ee 58       	subi	r30, 0x8E	; 142
+ 366:	ff 4f       	sbci	r31, 0xFF	; 255
+ 368:	0c 94 e2 01 	jmp	0x3c4	; 0x3c4 <__tablejump2__>
+		case 'A' :
+		case 'a' :
+			TOGGLE_BIT(myPORTA,pinnum);
+ 36c:	2b b3       	in	r18, 0x1b	; 27
+ 36e:	81 e0       	ldi	r24, 0x01	; 1
+ 370:	90 e0       	ldi	r25, 0x00	; 0
+ 372:	02 c0       	rjmp	.+4      	; 0x378 <GPIO_vtoggle_PIN+0x22>
+ 374:	88 0f       	add	r24, r24
+ 376:	99 1f       	adc	r25, r25
+ 378:	6a 95       	dec	r22
+ 37a:	e2 f7       	brpl	.-8      	; 0x374 <GPIO_vtoggle_PIN+0x1e>
+ 37c:	82 27       	eor	r24, r18
+ 37e:	8b bb       	out	0x1b, r24	; 27
+		break;
+ 380:	08 95       	ret
+		case 'B' :
+		case 'b' :
+			TOGGLE_BIT(myPORTB,pinnum);
+ 382:	28 b3       	in	r18, 0x18	; 24
+ 384:	81 e0       	ldi	r24, 0x01	; 1
+ 386:	90 e0       	ldi	r25, 0x00	; 0
+ 388:	02 c0       	rjmp	.+4      	; 0x38e <GPIO_vtoggle_PIN+0x38>
+ 38a:	88 0f       	add	r24, r24
+ 38c:	99 1f       	adc	r25, r25
+ 38e:	6a 95       	dec	r22
+ 390:	e2 f7       	brpl	.-8      	; 0x38a <GPIO_vtoggle_PIN+0x34>
+ 392:	82 27       	eor	r24, r18
+ 394:	88 bb       	out	0x18, r24	; 24
+		break;
+ 396:	08 95       	ret
+		case 'C' :
+		case 'c' :
+			TOGGLE_BIT(myPORTC,pinnum);
+ 398:	25 b3       	in	r18, 0x15	; 21
+ 39a:	81 e0       	ldi	r24, 0x01	; 1
+ 39c:	90 e0       	ldi	r25, 0x00	; 0
+ 39e:	02 c0       	rjmp	.+4      	; 0x3a4 <GPIO_vtoggle_PIN+0x4e>
+ 3a0:	88 0f       	add	r24, r24
+ 3a2:	99 1f       	adc	r25, r25
+ 3a4:	6a 95       	dec	r22
+ 3a6:	e2 f7       	brpl	.-8      	; 0x3a0 <GPIO_vtoggle_PIN+0x4a>
+ 3a8:	82 27       	eor	r24, r18
+ 3aa:	85 bb       	out	0x15, r24	; 21
+		break;
+ 3ac:	08 95       	ret
+		case 'D' :
+		case 'd' :
+			TOGGLE_BIT(myPORTD,pinnum);
+ 3ae:	22 b3       	in	r18, 0x12	; 18
+ 3b0:	81 e0       	ldi	r24, 0x01	; 1
+ 3b2:	90 e0       	ldi	r25, 0x00	; 0
+ 3b4:	02 c0       	rjmp	.+4      	; 0x3ba <GPIO_vtoggle_PIN+0x64>
+ 3b6:	88 0f       	add	r24, r24
+ 3b8:	99 1f       	adc	r25, r25
+ 3ba:	6a 95       	dec	r22
+ 3bc:	e2 f7       	brpl	.-8      	; 0x3b6 <GPIO_vtoggle_PIN+0x60>
+ 3be:	82 27       	eor	r24, r18
+ 3c0:	82 bb       	out	0x12, r24	; 18
+ 3c2:	08 95       	ret
+
+000003c4 <__tablejump2__>:
+ 3c4:	ee 0f       	add	r30, r30
+ 3c6:	ff 1f       	adc	r31, r31
+ 3c8:	05 90       	lpm	r0, Z+
+ 3ca:	f4 91       	lpm	r31, Z
+ 3cc:	e0 2d       	mov	r30, r0
+ 3ce:	09 94       	ijmp
+
+000003d0 <_exit>:
+ 3d0:	f8 94       	cli
+
+000003d2 <__stop_program>:
+ 3d2:	ff cf       	rjmp	.-2      	; 0x3d2 <__stop_program>
